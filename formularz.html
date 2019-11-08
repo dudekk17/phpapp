@@ -4,7 +4,7 @@ if (isset($_POST['wiadomosc'])){
     global $db;
     $post = $_POST['wiadomosc'];
     echo $post;
-    $sql "INSERT INTO posty VALUES(NULL, '.$post.')";
+    $sql = "INSERT INTO posty VALUES(NULL, '$post')";
     $db->exec($sql);
 }
 
