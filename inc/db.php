@@ -2,13 +2,9 @@
 function init_baza() {
 	global $db, $dbfile, $kom;
 	if (!file_exists($dbfile)) $kom[] = 'Brak pliku bazy. Tworzę nowy.';
-
 	$db = new PDO("sqlite:$dbfile");
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
 }
-
-
 function init_tables() {
 	global $db;
 	if (file_exists(DBASE.'baza.sql')) {
@@ -16,27 +12,22 @@ function init_tables() {
 		$q = "SELECT name FROM sqlite_master WHERE type='table' AND name='menu'";
 		$ret = array();
 		db_query($q, $ret);
-		if(empty($ret)){
+		if (empty($ret)) {
 			$db->exec($sql);
-	    $kom[] = "Utworzono tabele!";
-    }
+			$kom[] = "Utworzono tabele!";
+		}
 	}
 }
-
-function db_query($q, &$ret) {
+function db_query($q, &$ret=null) {
 	global $db;
 	$r = null;
 	try {
-	 $r = $db->query($q);
+		$r = $db->query($q);
 	} catch(PDOException $e) {
 		echo ($e->getMessage());
 	}
-	if ($r) {
-		$ret = $r->fetchAll(PDO::FETCH_ASSOC);
-    return true;
-  }
-  return false;
+	if ($r) $ret = $r->fetchAll(PDO::FETCH_ASSOC);
+	if (empty($ret)) return false;
+	return true;
 }
-
-
 ?>
