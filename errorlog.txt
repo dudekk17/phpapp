@@ -1,0 +1,26 @@
+[29-Nov-2019 09:37:12 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Baza::$db in /home/kl2ag1/public_html/phpapp/inc/db.php:12
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/index.php(17): Baza->__construct('db/baza.db')
+#1 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 12
+[29-Nov-2019 09:37:59 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Baza::$r in /home/kl2ag1/public_html/phpapp/inc/db.php:33
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(21): Baza::db_query('SELECT name FRO...')
+#1 /home/kl2ag1/public_html/phpapp/inc/db.php(14): Baza->init_tables()
+#2 /home/kl2ag1/public_html/phpapp/index.php(17): Baza->__construct('db/baza.db')
+#3 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 33
+[29-Nov-2019 09:38:55 Europe/Warsaw] PHP Notice:  Undefined variable: db_exec in /home/kl2ag1/public_html/phpapp/inc/db.php on line 24
+[29-Nov-2019 09:38:55 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/kl2ag1/public_html/phpapp/inc/db.php:24
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(14): Baza->init_tables()
+#1 /home/kl2ag1/public_html/phpapp/index.php(17): Baza->__construct('db/baza.db')
+#2 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 24
+[29-Nov-2019 09:40:01 Europe/Warsaw] PHP Notice:  Undefined variable: db_exec in /home/kl2ag1/public_html/phpapp/inc/db.php on line 24
+[29-Nov-2019 09:40:01 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/kl2ag1/public_html/phpapp/inc/db.php:24
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(14): Baza->init_tables()
+#1 /home/kl2ag1/public_html/phpapp/index.php(17): Baza->__construct('db/baza.db')
+#2 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 24
