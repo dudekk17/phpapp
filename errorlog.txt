@@ -24,3 +24,28 @@ Stack trace:
 #1 /home/kl2ag1/public_html/phpapp/index.php(17): Baza->__construct('db/baza.db')
 #2 {main}
   thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 24
+[06-Dec-2019 09:26:36 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function db_query() in /home/kl2ag1/public_html/phpapp/inc/users.php:43
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/userlogin.html(11): User->is_login('iksde')
+#1 /home/kl2ag1/public_html/phpapp/inc/functions.php(34): include('/home/kl2ag1/pu...')
+#2 /home/kl2ag1/public_html/phpapp/inc/template.php(34): get_page_content(Array)
+#3 /home/kl2ag1/public_html/phpapp/index.php(22): include_once('/home/kl2ag1/pu...')
+#4 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/users.php on line 43
+[06-Dec-2019 09:35:07 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function db_query() in /home/kl2ag1/public_html/phpapp/inc/users.php:44
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/userlogin.html(11): User->is_login('swiateczny')
+#1 /home/kl2ag1/public_html/phpapp/inc/functions.php(34): include('/home/kl2ag1/pu...')
+#2 /home/kl2ag1/public_html/phpapp/inc/template.php(34): get_page_content(Array)
+#3 /home/kl2ag1/public_html/phpapp/index.php(22): include_once('/home/kl2ag1/pu...')
+#4 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/users.php on line 44
+[06-Dec-2019 09:35:18 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function db_query() in /home/kl2ag1/public_html/phpapp/inc/users.php:44
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/userlogin.html(11): User->is_login('swiatecznyelf')
+#1 /home/kl2ag1/public_html/phpapp/inc/functions.php(34): include('/home/kl2ag1/pu...')
+#2 /home/kl2ag1/public_html/phpapp/inc/template.php(34): get_page_content(Array)
+#3 /home/kl2ag1/public_html/phpapp/index.php(22): include_once('/home/kl2ag1/pu...')
+#4 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/users.php on line 44
+[06-Dec-2019 09:38:36 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '}' in /home/kl2ag1/public_html/phpapp/inc/users.php on line 15
