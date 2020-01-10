@@ -49,3 +49,7 @@ Stack trace:
 #4 {main}
   thrown in /home/kl2ag1/public_html/phpapp/inc/users.php on line 44
 [06-Dec-2019 09:38:36 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '}' in /home/kl2ag1/public_html/phpapp/inc/users.php on line 15
+[10-Jan-2020 10:01:38 Europe/Warsaw] PHP Recoverable fatal error:  Object of class User could not be converted to string in /home/kl2ag1/public_html/phpapp/wiadomosci.html on line 8
+[10-Jan-2020 10:04:09 Europe/Warsaw] PHP Recoverable fatal error:  Object of class User could not be converted to string in /home/kl2ag1/public_html/phpapp/wiadomosci.html on line 8
+[10-Jan-2020 10:05:49 Europe/Warsaw] PHP Recoverable fatal error:  Object of class User could not be converted to string in /home/kl2ag1/public_html/phpapp/wiadomosci.html on line 8
+[10-Jan-2020 10:29:40 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '>' in /home/kl2ag1/public_html/phpapp/userlogin.html on line 11
