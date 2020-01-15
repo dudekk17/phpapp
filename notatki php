@@ -1,0 +1,26 @@
+kompilowanie( C++, kompilator, linker)
+interpretowane: php, python, Java Script (kod wykonywany linia po linii)
+zdalne wykonywanie kodu php po stronie serwera WWW : interpreter/dedykowany moduł serwera
+linkowanie / kompilacja trwa długo
+wyprowadzanie danych tekstowych : print(), echo(), echo
+po stronie serwera WWW kod PHP wykonywany jest  w plikach : .php
+kod php znaczniki <?php ?>
+dane ktore zmieniaja baze danych przesylamy z formularza za pomoca metody POST
+http to protokol nie metoda
+dane z formularza logowania dostepne sa po stronie serwera w skrypcie PHP w tablicy $_POST
+wyszukiwanie w serwisie WWW jakies informacje dane przesylamy w żądaniu GET
+walidacja danych - sprawdzanie poprawnosci danych po stronie serwera / uzywaniu odpowiednich atrybutow HTML5 w formularzach
+Java Script mozna uzyc do walidacji danych po stronie serwera / po stronie klienta
+sprawdzanie poprawnosci loginu i hasla -> walidacja / autentykacja
+autoryzacja - przyznanie komus uprawnien do czegos
+sprawdzanie czy zmienna istnieje i nie jest wartoscia NULL - isset()
+funkcja array_key_exists($key, $array) sprawdza czy istnieje podany klucz
+empty() - zmienna nie istnieje lub = false
+sprawdzanie poprawnosci przesylanych danych = htmlspecialchars(), trim(), strlen()
+zmienne PHP sa tworzone w momencie pierwszego przypisania
+tworzenie nowych zmiennych podczas wykonywania skryptu ${$zmienna} = 'wartosc'
+$ile - na sztywno ${$} - dynamicznie
+wartosc zmiennej ma znalezc sie w ciagu znakowym = "zmienna: $zmienna" / "zmienna:{tab['zmienna']}"
+"kod" odczytamy za pomoca instrukcji $_POST['kod']
+instrukcja PHP ktora umozliwia przegladanie elementow - foreach
+"KLasa" "public static" -> Klasa:: ....
